@@ -1,56 +1,123 @@
 <!doctype html>
-
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>Movie Panels - The smart movie message boards</title>
-  <meta name="description" content="Civilized movies talks for movie enthusiasts">
-  <meta name="author" content="MoviePanels">
-
-  <style>
-      html {
-        background: url(landscape2.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-      * {
-        color:#fff;
-      }
-    
-      .form-container {
-        width: 700px;
-        height: 700px;        
-        margin: 0 auto;
-      }
-   
-      iframe + script + .loading-indicator {
-        display: none;        
-      }
-      iframe {
-        width: 700px;
-        height:700px;
-       }
-  </style>
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
-
-<body>
-  <h1>Movie Panels</h1>
-  <h2></h2>
-  <section class="form-container">    
-   <iframe frameborder="0" style="height:700px;width:99%;border:none;" src='https://forms.zohopublic.com/virtualoffice7604/form/EmailSubscription/formperma/m14H4D5H4D8bA414C68KmK1FB'></iframe>
-    <div class="loading-indicator">Loading form...</div> 
-  </section>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Movie Panels - The smart movie message boards</title>
+		<meta name="description" content="Movies & cinema dedicated discussion boards platform, civilized for movie enthusiasts">
+		<meta name="author" content="MoviePanels">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css" /> -->
+		<style>
+			html {
+			background: url(landscape2.jpg) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			}
+			* {
+			color:#fff;
+			font-family: "Open Sans";
+			}
+			.jumbotron {
+			background: transparent;
+			margin-bottom: 0;
+			padding: 40px 0;
+			}
+			.bs-callout {
+			margin-bottom: 40px;
+			}
+			.form-container {
+			padding: 0;
+			}
+			/* bg colors */
+			.bg_1 .wrapper {
+			background-color: rgba(34, 0, 17, 0.5);
+			}
+			.bg_2 .wrapper {
+			background-color: rgba(0, 0, 0, 0.5);
+			}
+			.bg_3 .wrapper {
+			background-color: rgba(0, 34, 34, 0.5);
+			}
+			.bg_4 .wrapper {
+			background-color: rgba(68, 51, 34, 0.5);
+			}
+			.bg_5 .wrapper {
+			background-color: rgba(85, 51, 51, 0.5);
+			}
+			.bg_6 .wrapper {
+			background-color: rgba( 51, 68, 34, 0.5);
+			}
+			.bg_7 .wrapper {
+			background-color: rgba( 102, 119, 136, 0.5);
+			}
+			.bg_8 .wrapper {
+			background-color: rgba(  68, 85, 119, 0.5);
+			}
+			.bg_9 .wrapper {
+			background-color: rgba(  17, 34, 51, 0.5);
+			}
+			.bg_10 .wrapper {
+			background-color: rgba(  68, 34, 17, 0.5);
+			}
+			.bg_11 .wrapper {
+			background-color: rgba(   34, 0, 17, 0.5);
+			}
+			.bg_12 .wrapper {
+			background-color: rgba(  68, 34, 34, 0.5);
+			}
+			.bg_13 .wrapper {
+			background-color: rgba(51, 34, 17, 0.5);
+			}
+			.bg_14 .wrapper {
+			background-color: rgba(85, 0, 17, 0.5);
+			}
+		</style>
+		<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<script type="text/javascript">
+			var randomBg =  Math.floor(Math.random() * 13) + 1;
+			document.documentElement.style.backgroundImage = 'url(images/' + randomBg + '.jpg)';
+			document.documentElement.className = 'bg_' + randomBg;
+		</script>
+		<div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xs-offset-0 col-sm-offset-1 col-md-offset-2 col-lg-offset-3 wrapper">
+			<div class="row">
+				<div class="jumbotron col-xs-12">
+					<div class="container">
+						<h1>Movie Panels</h1>
+						<p>Movies &amp; cinema dedicated discussion boards platform.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<section class="col-sm-7 col-lg-8">
+					<div class="bs-callout bs-callout-info">
+						<h3>You want to debate a movie?</h3>
+						<p>You want to make your voice heard? You want to know what others think? Then you need a message board. We'll provide it.</p>
+					</div>
+					<div class="bs-callout bs-callout-info" >
+						<h3>Topic Message boards</h3>
+						<p>Each existing movie or person involved in the production of a movie can have a centralized message boards section, where users can start individual topics related to the movie or the person (just like the "soon to be former" IMDb message boards). Optionally tag and filter topics in a board. If you want to know what people think about the bear scene in Revenant or how Oscar worthy is LaLa Land, you won't have to browse through all the entries. Just simply search on "bear", "Oscar", or related tags.</p>
+					</div>
+					<div class="bs-callout bs-callout-info">
+						<h3>Making the boards better organized, and more civil</h3>
+						<p>like/dislike option as in a typical social network. Topics with predominant dislikes can be optionally hidden.</p>
+					</div>
+					<div class="bs-callout bs-callout-info">
+						<h3>Filters for foul language</h3>
+						<p>A possibility to report undetected expressions will be provided to users.</p>
+					</div>
+				</section>
+				<section class="col-sm-5 col-lg-4 form-container">
+					<iframe frameborder="0" style="height:710px;border:none;width:100%;" src='https://forms.zohopublic.com/virtualoffice7604/form/EmailSubscription/formperma/m14H4D5H4D8bA414C68KmK1FB'></iframe>
+				</section>
+			</div>
+		</div>
+	</body>
 </html>
-
-
-
-
-
