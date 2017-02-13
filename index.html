@@ -8,7 +8,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css" /> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" />
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<style>
 			html {
 			background: url(landscape2.jpg) no-repeat center center fixed;
@@ -31,6 +32,9 @@
 			}
 			.form-container {
 			padding: 0;
+			}
+			nav {
+				padding-top: 15px;
 			}
 			/* bg colors */
 			.bg_1 .wrapper {
@@ -87,11 +91,15 @@
 			document.documentElement.className = 'bg_' + randomBg;
 		</script>
 		<div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xs-offset-0 col-sm-offset-1 col-md-offset-2 col-lg-offset-3 wrapper">
+			<nav class="sticky-top navbar navbar-light pull-right">
+				<!-- <a class="btn btn-social-icon btn-facebook" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-md']);"><i class="fa fa-facebook"></i></a> -->
+				<a class="btn btn-social-icon btn-twitter navbar-brand" href="https://twitter.com/MoviePanels" onclick="ga('send', 'social', 'Twitter', 'open', '@moviepanels');"><i class="fa fa-twitter"></i></a>
+			</nav>
 			<div class="row">
-				<div class="jumbotron col-xs-12">
+				<div class="jumbotron col-xs-12 col-md-10">
 					<div class="container">
 						<h1>Movie Panels</h1>
-						<p>Movies &amp; cinema dedicated discussion boards platform.</p>
+						<p>Movies &amp; cinema dedicated discussion boards platform</p>
 					</div>
 				</div>
 			</div>
@@ -101,23 +109,27 @@
 						<h3>You want to debate a movie?</h3>
 						<p>You want to make your voice heard? You want to know what others think? Then you need a message board. We'll provide it.</p>
 					</div>
-					<div class="bs-callout bs-callout-info" >
+					<div class="bs-callout bs-callout-info">
 						<h3>Topic Message boards</h3>
-						<p>Each existing movie or person involved in the production of a movie can have a centralized message boards section, where users can start individual topics related to the movie or the person (just like the "soon to be former" IMDb message boards). Optionally tag and filter topics in a board. If you want to know what people think about the bear scene in Revenant or how Oscar worthy is LaLa Land, you won't have to browse through all the entries. Just simply search on "bear", "Oscar", or related tags.</p>
+						<p>Each existing movie or person involved in the production of a movie can have a centralized message boards section, where users can start individual topics related to the movie or the person (just like the "soon to be former" IMDb message boards).</p>
+						<p>Optionally, tag and filter topics in a board. If you want to know what people think about the bear scene in Revenant or how Oscar worthy is LaLa Land, you won't have to browse through all the entries. Just simply search on "bear", "Oscar", or related tags.</p>
 					</div>
 					<div class="bs-callout bs-callout-info">
 						<h3>Making the boards better organized, and more civil</h3>
-						<p>like/dislike option as in a typical social network. Topics with predominant dislikes can be optionally hidden.</p>
+						<p>Like/dislike option as in a typical social network. Topics with predominant dislikes can be optionally hidden.</p>
 					</div>
 					<div class="bs-callout bs-callout-info">
 						<h3>Filters for foul language</h3>
-						<p>A possibility to report undetected expressions will be provided to users.</p>
+						<p>An option to report undetected expressions will be provided to users.</p>
 					</div>
 				</section>
 				<section class="col-sm-5 col-lg-4 form-container">
 					<iframe frameborder="0" style="height:710px;border:none;width:100%;" src='https://forms.zohopublic.com/virtualoffice7604/form/EmailSubscription/formperma/m14H4D5H4D8bA414C68KmK1FB'></iframe>
 				</section>
 			</div>
+
+			<footer class="footer">
+			</footer>
 		</div>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -130,4 +142,4 @@
 
 		</script>
 	</body>
-</html>
+</html
