@@ -10,17 +10,32 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" />
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 		<style>
 			html {
-			background: url(landscape2.jpg) no-repeat center center fixed;
+			background:  no-repeat center center fixed;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
+				font-size: 15px;
+
+			}
+			body {
+				line-height: 1.6;
+			}
+			h3 {
+				font-size: 1.75rem;
+			}
+			p {
+				font-size: 1rem;
 			}
 			* {
-			color:#fff;
+			color:#fff  ;
 			font-family: "Open Sans";
+			}
+			i {
+				color: #fff;
 			}
 			.jumbotron {
 			background: transparent;
@@ -38,47 +53,68 @@
 			}
 			/* bg colors */
 			.bg_1 .wrapper {
-			background-color: rgba(34, 0, 17, 0.5);
+			background-color: rgba(34, 0, 17, 0.7);
 			}
 			.bg_2 .wrapper {
-			background-color: rgba(0, 0, 0, 0.5);
+			background-color: rgba(0, 0, 0, 0.7);
 			}
 			.bg_3 .wrapper {
-			background-color: rgba(0, 34, 34, 0.5);
+			background-color: rgba(0, 34, 34, 0.7);
 			}
 			.bg_4 .wrapper {
-			background-color: rgba(68, 51, 34, 0.5);
+			background-color: rgba(68, 51, 34, 0.7);
 			}
 			.bg_5 .wrapper {
-			background-color: rgba(85, 51, 51, 0.5);
+			background-color: rgba(85, 51, 51, 0.7);
 			}
 			.bg_6 .wrapper {
-			background-color: rgba( 51, 68, 34, 0.5);
+			background-color: rgba( 51, 68, 34, 0.7);
 			}
 			.bg_7 .wrapper {
-			background-color: rgba( 102, 119, 136, 0.5);
+			background-color: rgba( 102, 119, 136, 0.7);
 			}
 			.bg_8 .wrapper {
-			background-color: rgba(  68, 85, 119, 0.5);
+			background-color: rgba(  68, 85, 119, 0.7);
 			}
 			.bg_9 .wrapper {
-			background-color: rgba(  17, 34, 51, 0.5);
+			background-color: rgba(  17, 34, 51, 0.7);
 			}
 			.bg_10 .wrapper {
-			background-color: rgba(  68, 34, 17, 0.5);
+			background-color: rgba(  68, 34, 17, 0.7);
 			}
 			.bg_11 .wrapper {
-			background-color: rgba(   34, 0, 17, 0.5);
+			background-color: rgba(   34, 0, 17, 0.7);
 			}
 			.bg_12 .wrapper {
-			background-color: rgba(  68, 34, 34, 0.5);
+			background-color: rgba(  68, 34, 34, 0.7);
 			}
 			.bg_13 .wrapper {
-			background-color: rgba(51, 34, 17, 0.5);
+			background-color: rgba(51, 34, 17, 0.7);
 			}
 			.bg_14 .wrapper {
-			background-color: rgba(85, 0, 17, 0.5);
+			background-color: rgba(85, 0, 17, 0.7);
 			}
+			.bg_x .wrapper {
+			background-color: rgba(235, 241, 222, 0.9);
+			}
+
+
+			.logo {
+				padding-top:15px
+			}
+
+			@media screen and (min-width: 768px) {
+				.logo {
+					padding-top:55px
+				}
+			}
+
+			@media screen and (max-width: 768px) {
+				.jumbotron {
+					padding-top:0px
+				}
+			}
+
 		</style>
 		<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -86,7 +122,7 @@
 	</head>
 	<body>
 		<script type="text/javascript">
-			var randomBg =  Math.floor(Math.random() * 13) + 1;
+			var randomBg =  Math.floor(Math.random() * 14) + 1;
 			document.documentElement.style.backgroundImage = 'url(images/' + randomBg + '.jpg)';
 			document.documentElement.className = 'bg_' + randomBg;
 		</script>
@@ -96,31 +132,47 @@
 				<a class="btn btn-social-icon btn-twitter navbar-brand" href="https://twitter.com/MoviePanels" onclick="ga('send', 'social', 'Twitter', 'open', '@moviepanels');"><i class="fa fa-twitter"></i></a>
 			</nav>
 			<div class="row">
-				<div class="jumbotron col-xs-12 col-md-10">
+			<div class="col-xs-4 col-md-2 logo">
+				<img src="images/logo3-sm-w.png" alt="movie panels - message boards logo" width="100%"/>
+			</div>
+				<div class="jumbotron col-xs-12 col-md-8">
 					<div class="container">
 						<h1>Movie Panels</h1>
-						<p>Movies &amp; cinema dedicated discussion boards platform</p>
+						<p>Talk about movies, the smart discussion boards</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<section class="col-sm-7 col-lg-8">
 					<div class="bs-callout bs-callout-info">
-						<h3>You want to debate a movie?</h3>
-						<p>You want to make your voice heard? You want to know what others think? Then you need a message board. We'll provide it.</p>
+						<h3>What's this about?</h3>
+						<p>Do you miss the IMDb message boards? Well, maybe not yet, but you might be soon. They're closing. What we want is to bring the same thing back, but better.</p>
+						<p>Movie Panels, is the a smart platform for movie lovers to share their views, insights on cinema related topics e.g., movies, people (actors, directors etc.), sound, VFX etc. Empowered by innovative technology and social engineering like <i>Natural Language Processing</i>, <i>Semantic Web</i> we are able to make message boards a civil and slick experience that focuses on share and ideas exchange.</p>
 					</div>
 					<div class="bs-callout bs-callout-info">
-						<h3>Topic Message boards</h3>
-						<p>Each existing movie or person involved in the production of a movie can have a centralized message boards section, where users can start individual topics related to the movie or the person (just like the "soon to be former" IMDb message boards).</p>
-						<p>Optionally, tag and filter topics in a board. If you want to know what people think about the bear scene in Revenant or how Oscar worthy is LaLa Land, you won't have to browse through all the entries. Just simply search on "bear", "Oscar", or related tags.</p>
+						<h3>How will this work?</h3>
+						<p>We will provide essentially the same core functionality you've been offered on the IMDb boards. Not as forum. Not as scattered Reddit entries. Not as some sort of chat alternative. We will keep the format you're used to, with some enhancements. In essence:</p>
+						<ul>
+							<li>Each existing movie or person involved in the production of a movie will have a centralized message boards page.</li>
+							<li>You and other users will be able to start individual topics on this boards page (just like the "soon to be former" IMDb message boards).</li>
+							<li>You will be able to tag and search topics in a board. So if you've seen some interesting discussion a couple months ago and want to find it again, you won't have to spend hours to.</li>
+							<li>You will be able to “like” or “dislike” comments as in a typical social network. Topics with predominant dislikes can be optionally hidden.</li>
+							<li>Filters for foul language will be integrated and an option to report undetected expressions will be provided to users.</li>
+						</ul>
 					</div>
 					<div class="bs-callout bs-callout-info">
-						<h3>Making the boards better organized, and more civil</h3>
-						<p>Like/dislike option as in a typical social network. Topics with predominant dislikes can be optionally hidden.</p>
+						<h3>Why are we doing this?</h3>
+						<p>Because, as you, we'll miss the boards with all the information they provide. Because, as you, we will lose the best place to ask a question about a movie or tell others what we think about it. Because, as you, we would like to have a more civil and organized place to discuss than the one that got so poorly maintained that IMDb decided to close.</p>
 					</div>
 					<div class="bs-callout bs-callout-info">
-						<h3>Filters for foul language</h3>
-						<p>An option to report undetected expressions will be provided to users.</p>
+						<h3>Who are we?</h3>
+						<p>We're a small group of IT engineers and movies enthusiasts. What you see here is just a glimpse of the plans we have. Since getting running something better than a forum involves some costs, a crowdfunding campaign is part of these plans. We'll provide details when we'll launch it, but now we would like to know if you want to keep the boards alive.</p>
+					</div>
+
+					<div class="bs-callout bs-callout-info">
+						<h3>What should you do?</h3>
+						<p><strong>For now, just simply tell us that you're interested on getting this alive</strong>. We'll let you know when things start moving, and we'll also reserve your username + get the movie you like in the initial boards platform release ;)
+						<p>Don't forget to check the answer on the last question. There's no commitment in it. We just want to know if you would be interested in a premium version with some extra services. Thanks!</p>
 					</div>
 				</section>
 				<section class="col-sm-5 col-lg-4 form-container">
